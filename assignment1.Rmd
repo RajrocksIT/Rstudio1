@@ -1,0 +1,135 @@
+---
+title: "Assignment 1"
+autor: "Rajesh Chinni"
+output: html_document
+---
+
+## Answers
+
+
+**1.** 
+
+
+**a.** 
+```{r}
+x <- c(65311 , 65624 , 65908 , 66219 , 66499 , 66821 , 67145 , 67447)
+diff(x)
+```
+Based on the result above, I think the diff(x) function is 313, 284, 311, 280, 322, 324 and 302.
+
+
+**b.** 
+```{r}
+length(x)
+```
+
+The results suggests that there are 8 values in the vector
+
+
+**c.** 
+```{r}
+y <- diff(x)
+max(y)
+min(y)
+mean(y)
+sd(y)
+```
+
+
+**2.** 
+    
+**a.**  
+```{r}
+Commute <- c(17, 16, 20, 24, 22, 15, 21, 15, 17, 22)
+min(Commute)
+max(Commute)
+mean(Commute)
+summary(Commute)
+```
+
+**b.** 
+```{r}
+Commute[4] = 18
+mean(Commute)
+```
+
+**c.**
+```{r}
+length(Commute[Commute>= 20])
+
+```
+
+**d.**  
+```{r}
+length(Commute[Commute < 17])/length(Commute)
+```
+
+**e.**
+
+```{r}
+Commute + 1
+```
+The function above adds one to every value in the vector.
+
+```{r}
+Commute[-6]
+```
+The function above shows every value except 6th item in the vector.
+
+```{r}
+sum(Commute>21 | Commute<16)
+```
+The function above shows all values which are either greater than 21 or less than 16 in the vector.
+
+```{r}
+Commute[Commute>=17]
+```
+The function above shows all values which are greater than or equal to 17 in the vector.
+
+```{r}
+sum(Commute[Commute>20])
+```
+The function above shows the total cumulative time of commute of 20 minutes or more.
+```{r}
+Commute[4:6] 
+```
+The function above shows 4th, 5th and 6th items of the vector.
+
+
+```{r}
+
+```
+
+
+**3.**
+```{r}
+x <- c(1, 8, 2, 6, 3, 8, 5, 5, 5, 5) 
+y = sum(x) /10
+print(y)
+log10(x)
+(x^4.4) / 2.875
+max(x)
+min(x)
+difference <- (max(x) - min(x))
+print(difference)
+
+```
+
+**4.** 
+  **a.** 
+  
+```{r}
+bill = c(46, 33, 39, 37, 46, 30, 48, 32, 49, 35, 30, 48)
+range(bill)
+range(bill)[2] - range(bill)[1]
+```
+The functions above shows highest and smallest value in the vector. Also, the difference of those 2 values.
+
+  **b.** 
+  
+```{r}
+length(bill[bill>40])
+length(bill[bill>40])/length(bill)
+
+```
+
